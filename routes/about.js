@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-    res.send('My first route works!');
+    res.send('My deployment github repository can be found at https://github.com/Kazzamkablam/DeployToAzure');
 });
 
 module.exports = router;
