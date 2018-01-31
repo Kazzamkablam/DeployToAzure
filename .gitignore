@@ -1,0 +1,26 @@
+# Logs
+Logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Jscov
+lib-cov
+
+#Coverage directory
+coverage
+
+#node-waf configuration
+.lock-wscript
+
+#Compiled binary addons
+Build/Release
+
+#Dependency directory
+node_modules
+
+#Debug log
+npm-debug.log
