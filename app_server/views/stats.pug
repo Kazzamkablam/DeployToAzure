@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    h1= 'Statistiikkaa'
+    ul
+        each winner in winners
+            li= winner.kuvaus + ': ' + winner.player + ' : ' + winner.arvo
+

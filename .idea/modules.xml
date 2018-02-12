@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+<<<<<<< HEAD
+      <module fileurl="file://$PROJECT_DIR$/.idea/4-ExpressMVC-StaticSite.iml" filepath="$PROJECT_DIR$/.idea/4-ExpressMVC-StaticSite.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/DeployToAzure.iml" filepath="$PROJECT_DIR$/.idea/DeployToAzure.iml" />
+>>>>>>> 5ed97bfbe556b0791f657485c25cb18973cd9840
+    </modules>
+  </component>
+</project>

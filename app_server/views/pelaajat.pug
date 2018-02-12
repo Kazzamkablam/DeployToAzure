@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1= 'Parhaat pelaajat'
+  ul
+    each winner in winners
+      li= winner.score + ': ' + winner.player
+
