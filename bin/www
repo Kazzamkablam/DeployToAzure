@@ -5,11 +5,7 @@
  */
 
 var app = require('../app');
-<<<<<<< HEAD
 var debug = require('debug')('2-firstexpress:server');
-=======
-var debug = require('debug')('deploytoazure:server');
->>>>>>> 5ed97bfbe556b0791f657485c25cb18973cd9840
 var http = require('http');
 
 /**
