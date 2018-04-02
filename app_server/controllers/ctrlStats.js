@@ -2,7 +2,7 @@ const request = require ('request');
 const apiURL = require ('./apiURLs');
 
 const statslista = function(req, res){
-    const path = 'api/statsit';
+    const path = 'api/stats';
     const requestOptions = {
         url : apiURL.server + path,
         method : 'GET',
