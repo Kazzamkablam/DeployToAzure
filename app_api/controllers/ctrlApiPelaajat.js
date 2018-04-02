@@ -18,7 +18,7 @@ const pelaajalista = function (req, res) {
 
 
 const addWinner = function (req, res) {
-
+    //console.log(req.body);
     pelaajaModel.create(req.body, function(err, newWinner){
             if (err){
                 res.status(400).json(err);
