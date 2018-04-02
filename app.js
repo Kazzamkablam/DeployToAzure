@@ -4,9 +4,9 @@ const path = require('path');
 const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
-require ('./app_server/models/db');
+require ('./app_api/models/db');
 const index = require('./app_server/routes/index');
-
+const apiRoutes = require('./app_api/routes/indexApi');
 const app = express();
 
 // view engine setup
@@ -21,6 +21,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index); // all route paths starting with '/' will be handled by the index route file (middleware)
+app.use('/api', apiRoutes);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
