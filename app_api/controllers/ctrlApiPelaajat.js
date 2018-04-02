@@ -1,6 +1,6 @@
 
 const mongoose = require ('mongoose');
-const pelaajaModel = mongoose.model ('pelaajat');
+const pelaajaModel = mongoose.model ('pelaaja');
 
 const pelaajalista = function (req, res) {
 
@@ -25,10 +25,11 @@ const addWinner = function (req, res) {
             }
             else{
                 res.status(201).json(newWinner);
+
             }
         }
     );
-}
+};
 
 module.exports = {
     pelaajalista,

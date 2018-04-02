@@ -1,6 +1,6 @@
 
 const mongoose = require ('mongoose');
-const statsModel = mongoose.model ('statsit');
+const statsModel = mongoose.model ('statsi');
 
 const statslista = function (req, res) {
 
@@ -17,9 +17,18 @@ const statslista = function (req, res) {
     });
 };
 
+
 const addWinner = function (req, res) {
-    res.status (201).json({"Add Winner" : "Work in progress"});
-}
+    statsModel.create(req.body, function(err, newWinner){
+            if (err){
+                res.status(400).json(err);
+            }
+            else{
+                res.status(201).json(newWinner);
+            }
+        }
+    );
+};
 
 module.exports = {
     statslista,

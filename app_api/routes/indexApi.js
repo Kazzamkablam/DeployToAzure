@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-
+const ctrlApiPelaajat = require ('../controllers/ctrlApiPelaajat');
 const ctrlApiStats = require ('../controllers/ctrlApiStats');
 
 router
@@ -9,7 +9,7 @@ router
     .get (ctrlApiStats.statslista)
     .post (ctrlApiStats.addWinner);
 
-const ctrlApiPelaajat = require ('../controllers/ctrlApiPelaajat');
+
 
 router
     .route ('/pelaajat')
