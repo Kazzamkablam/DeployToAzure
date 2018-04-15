@@ -1,15 +1,14 @@
 extends layout
 
 block content
-   .row
-     h4= 'Uusi paras pelaaja'
-   form(action="", method="post")
-      .form-group.row
-        label Pelaaja
-            input.form.control(name="player")
-      .form-group.row
-        label Pisteet
-            input.form.control(name="score")
-      .form-group.row
-        button.btn-primary Add
-
+    .row
+        h4 New world cup winner
+    form(action="", method="post")
+        .form-group.row
+            label Pelaaja
+                input.form-control(name="player")
+        .form-group.row
+            label Pisteet
+                input.form-control(name="score")
+        .form-group.row
+button.btn-primary Add
