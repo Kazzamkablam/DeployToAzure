@@ -1,0 +1,15 @@
+extends layout
+
+block content
+    .row
+        h4 Uusi paras pelaaja
+        form(action="", method="post")
+            .form-group.row
+                label Pelaaja
+                    input.form.control(name="pelaaja")
+            .form-group.row
+                label Pisteet
+                    input.form.control(name="pisteet")
+            .form-group.row
+                button.btn-primary Add
+

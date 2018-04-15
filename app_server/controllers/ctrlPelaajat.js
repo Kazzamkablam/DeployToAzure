@@ -1,6 +1,36 @@
 const request = require ('request');
 const apiURL = require ('./apiURLs');
 
+const showForm = function (req, res) {
+    res.render('pelaajat_add');
+};
+
+const addData = function (req, res) {
+    const path='api/pelaajat';
+
+    const postdata = {
+        score: req.body.score,
+        player: req.body.player
+    };
+
+    const requestOptions = {
+        url: apiURL.server + path,
+        method: 'POST',
+        json: postdata
+    };
+
+    request (
+        requestOptions,
+        function (err, response) {
+            if (response.statusCode === 201) {
+                res.redirect('/pelaajat');
+            } else {
+                res.render('error', {message: 'Error adding data: ' + response.statusMessage + ' (' + response.statusCode + ')' });
+            }
+        }
+    );
+
+}
 const pelaajalista = function(req, res){
     const path = 'api/pelaajat';
     const requestOptions = {
@@ -43,5 +73,7 @@ request(
 };
 */
 module.exports = {
-    pelaajalista
+    pelaajalista,
+    showForm,
+    addData
 };
