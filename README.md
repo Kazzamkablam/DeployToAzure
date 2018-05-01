@@ -5,7 +5,7 @@ wishes it to be.
 
 It will keep track of scores user enters to the website and display them on it.
 
-
+Details can be found in the wiki.
 
 
 
